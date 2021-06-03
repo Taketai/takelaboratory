@@ -1,0 +1,325 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+/* 画面上部の「たけラボ」帯部分 */
+.title-contents {
+  width: 100vw;
+  background: #f6f6f6;
+  background-image: image-url('takelabo-header01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 2px rgba(239, 239, 239, 0.9);
+  
+}
+
+.service-title {
+  font-size: 7vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+/* //画面上部の「たけラボ」帯部分 */
+
+/* コンセプト */
+.select-reason-contents {
+  padding: 5vh 15vw;
+}
+
+.select-reason-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.select-reason-contents>.title::after {
+  content: '';
+  width: 335px;
+  height: 4px;
+  background-color: #179D84;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reason-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reason-lists>.list {
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  border: solid 4px #179D84;
+  border-radius: 10px;
+}
+
+.list-pict {
+  margin-bottom: 5px;
+  width: 60%;
+}
+
+.reason-list-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 60px;
+  background-color: #179D84;
+  color: #fff;
+}
+
+.reason-list-text {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+.reason-list-green-text {
+  color: #179D84;
+}
+
+.reason-list-description {
+  color: #179D84;
+  font-size: 15px;
+  margin: 5px 10px;
+}
+
+/* //コンセプト */
+
+
+/* 画面中央の「アプリダウンロード案内」帯部分*/
+.ad-contents {
+  width: 100vw;
+  background-color: #179D84;
+  // background-image: image-url('takelabo-header02.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.ad-title {
+  font-size: 5vh;
+  margin-bottom: 2vh;
+}
+
+.ad-explain {
+  font-size: 2.5vh;
+  line-height: 30px;
+}
+
+.store-btn {
+  display: flex;
+  margin-top: 24px;
+}
+
+.apple-btn {
+  margin-right: 1vw;
+  height: 9vh;
+}
+
+.google-btn {
+  height: 9vh;
+}
+
+/* //画面中央の「アプリダウンロード案内」帯部分 */
+
+/* たけラボの場 */
+.feature-contents {
+  padding: 5vh 15vw;
+
+}
+
+.feature-contents>.title {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.feature-contents>.title::after {
+  content: '';
+  width: 250px;
+  height: 4px;
+  background-color: #179D84;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-lists>.list {
+  width: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: solid 4px #179D84;
+  border-radius: 10px;
+}
+
+.feature-list-text {
+  color: #179D84;
+  background:linear-gradient(transparent 60%, #ff6 60%);
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.feature-list-description {
+  color: #179D84;
+  font-size: 15px;
+  margin: 10px;
+}
+
+/* //たけラボの場 */
+
+/* 商品一覧 */
+
+.item-contents {
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.item-contents>.title {
+  font-size: 5vh;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.item-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.item-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.item-img-content {
+  position: relative;
+}
+
+.item-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.sold-out {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  background-color: crimson;
+  transform: skewY(-10deg);
+}
+
+.sold-out>span {
+  color: #FFF;
+  font-size: 45px;
+  font: bold;
+}
+
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.item-name {
+  font-size: 2.5vh;
+}
+
+.item-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 2vh;
+}
+
+/* //商品一覧 */

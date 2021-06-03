@@ -1,0 +1,22 @@
+.asobi-btn {
+  width: 120px;
+  background: #179D84;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.asobi-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.asobi-btn-icon {
+  width: 60%;
+}
