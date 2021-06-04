@@ -1,4 +1,5 @@
 class QuizzesController < ApplicationController
+  before_action :authenticate_user!
 
   def index
     @quiz = Quiz.order("created_at DESC")
@@ -9,12 +10,14 @@ class QuizzesController < ApplicationController
 
   def create
     @quiz = Quiz.new(quiz_params)
-      if @quiz.valid?
-        @quiz.save
-        render :create
-      else
-        render :index
-      end
+
+    if @quiz.valid? && @quiz.answer == "いち"
+      @quiz.save
+      render :create
+    else
+      @miss = '間違っています';
+      render :index
+    end
   end
 
 
