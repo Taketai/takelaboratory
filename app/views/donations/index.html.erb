@@ -9,7 +9,7 @@
     <p class='service-explain'>
       たけラボのテーマは『共創』。研究所ですが、概念を脱ぎ捨てた『たけラボ』は、知恵と技術を”気軽”に共有できる新しい教育の場です。
      研究者やマーケッター、クリエーター、地域の人々や生徒・学生たちが集い、いろいろなところから持ち込まれたアイディア・試作品、いろんな分野の耳寄りな情報やアイデアが並び、刺激的でエネルギーあふれる場所。
-     ここから次のプロジェクトが起きて、思いもよらない何かをカタチにして生み出していき、一緒に楽しい時間を過ごしましょう。
+     ここから思いもよらないカタチが生まれ、ワクワクする時間を共有したい。そんな想いからたけラボが誕生しました。
     </p>
 
   </div>
@@ -22,7 +22,7 @@
     </h2>
     <ul class='reason-lists'>
       <li class='list'>
-        <%= image_tag "takelabo-intro01.png", class:"list-pict" %>
+        <%= image_tag "takelabo-concept01.png", class:"list-pict" %>
         <span class='reason-list-number'>1</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-green-text'>出会う、集まる</span>
@@ -34,7 +34,7 @@
       <li class='list'>
         
         <span class='reason-list-number'>2</span>
-        <%= image_tag "takelabo-intro02.png", class:"list-pict" %>
+        <%= image_tag "takelabo-concept02.png", class:"list-pict" %>
         <h3 class='reason-list-text'>
           <span class='reason-list-green-text'>見つける、話す</span>
         </h3>
@@ -43,7 +43,7 @@
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "takelabo-intro03.png", class:"list-pict" %>
+        <%= image_tag "takelabo-concept03.png", class:"list-pict" %>
         <span class='reason-list-number'>3</span>
         <h3 class='reason-list-text'>
           <span class='reason-list-green-text'>生み出す、育てる</span>
@@ -84,19 +84,19 @@
     </h2>
     <ul class='feature-lists'>
       <li class='list'>
-        <%= image_tag "furima-intro04.png", class:"list-pict" %>
+        <%= image_tag "takelabo-study01.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
           自然体験と<br>プログラミング教育
         </h3>
         <p class='feature-list-description'>
-          　感覚と想像力を養う”自然体験”と時代の流れが激しい未来に備えた”最新テクノロジーの教育”。この２つの
+          　感覚と想像力を養う”自然体験”と未来に備えた”最新テクノロジーの教育”。この２つの
           バランスを理想的なカタチで提供していくのが今の教育に必要なものだと確信しています。
           たけラボはこの研究を惜しみません！
 
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro05.png", class:"list-pict" %>
+        <%= image_tag "takelabo-study02.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
           オープンラボ
         </h3>
@@ -107,7 +107,7 @@
         </p>
       </li>
       <li class='list'>
-        <%= image_tag "furima-intro06.png", class:"list-pict" %>
+        <%= image_tag "takelabo-study03.png", class:"list-pict" %>
         <h3 class='feature-list-text'>
           たけラボクイズ大会
         </h3>
@@ -120,71 +120,21 @@
   </div>
   <%# /たけラボの場 %>
 
-  <%# 商品一覧 %>
-  <div class='item-contents'>
-    <h2 class='title'>ピックアップカテゴリー</h2>
-    <div class="subtitle" >
-      新規投稿商品
-    </div>
-    <ul class='item-lists'>
-
-      <%# 商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
-      <li class='list'>
-        <%= link_to "#" do %>
-        <div class='item-img-content'>
-          <%= image_tag "item-sample.png", class: "item-img" %>
-
-          <%# 商品が売れていればsold outを表示しましょう %>
-          <div class='sold-out'>
-            <span>Sold Out!!</span>
-          </div>
-          <%# //商品が売れていればsold outを表示しましょう %>
-
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= "商品名" %>
-          </h3>
-          <div class='item-price'>
-            <span><%= "販売価格" %>円<br><%= '配送料負担' %></span>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <%# //商品のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
-
-      <%# 商品がない場合は以下のダミー商品が表示されるようにしましょう %>
-      <%# 商品がある場合は表示されないようにしましょう %>
-      <li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            商品を出品してね！
-          </h3>
-          <div class='item-price'>
-            <span>99999999円<br>(税込み)</span>
-            <div class='star-btn'>
-              <%= image_tag "star.png", class:"star-icon" %>
-              <span class='star-count'>0</span>
-            </div>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <%# //商品がある場合は表示されないようにしましょう %>
-      <%# //商品がない場合は以下のダミー商品が表示されるようにしましょう %>
-    </ul>
-  </div>
-  <%# /商品一覧 %>
 </div>
 
-<%= link_to('#', class: 'asobi-btn') do %>
+      <% if user_signed_in? %>
+      <%= link_to('#', class: 'asobi-btn') do %>
+  <span class='asobi-btn-text'>まってたよ</span>
+  <%# <%= link_to current_user.nickname, "#", class: "asobi-btn-icon" %>
+  <%= image_tag 'icon_take.png' , size: '185x50' ,class: "asobi-btn-icon" %>
+<% end %>
+      <% else %>
+
+<%= link_to(new_user_registration_path, class: 'asobi-btn') do %>
   <span class='asobi-btn-text'>なかまになる</span>
   <%= image_tag 'icon_take.png' , size: '185x50' ,class: "asobi-btn-icon" %>
 <% end %>
+
+      <% end %>
+
 <%= render "shared/footer" %>
