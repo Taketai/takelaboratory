@@ -1,0 +1,32 @@
+<%= render "shared/second-header"%>
+<%= form_with model: @quiz, url: quizzes_path, class: 'quiz-main', local: true do |f| %>
+
+<div class='form-wrap'>
+  <div class='form-header'>
+    <h1 class='form-header-text'>
+      たけラボクイズ大会
+    </h1>
+  </div>
+
+
+  <div class="quiz-group">
+    <div class="quiz-flame">
+      <%= image_tag "today-quiz.png", class:"quiz-pict" %>
+    </div>
+  </div>
+
+  <div class="quiz-group">
+    <div class='quiz-text-wrap'>
+      <label class="quiz-text">『全角ひらがな』で答えを入力してください</label>
+    </div>
+    <%= f.text_area :answer, class:"input-default", id:"nickname", placeholder:"全角ひらがなで答えを入力", maxlength:"10" %>
+  </div>
+
+  <div class='quiz-btn'>
+    <%= f.submit "決定" ,class:"quiz-red-btn" %>
+  </div>
+
+</div>
+
+<% end %>
+<%= render "shared/second-footer"%>
