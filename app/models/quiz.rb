@@ -1,0 +1,8 @@
+class Quiz < ApplicationRecord
+  belongs_to :user
+
+  with_options presence: true do
+    validates :answer, format: {with: /\A[ぁ-んァ-ン一-龥]/}
+  end
+
+end

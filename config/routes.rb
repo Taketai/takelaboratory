@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  get 'donations/index'
   devise_for :users
+
+  get 'quizzes/index'
+  get 'donations/index'
+  post 'quizzes', to: 'quizzes#create'
+  
   root to: 'donations#index'
-  resources :donations
+  resources :donations, only: [:index, :new, :create, :show]
+  resources :quiz, only: [:index, :new, :create]
 end

@@ -1,0 +1,32 @@
+<%= render "shared/second-header"%>
+
+<div class='quiz-main'>
+  <div class='form-wrap'>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        正解です！！
+      </h1>
+    </div>
+
+
+    <div class="quiz-group">
+      <div class="quiz-flame">
+        <%= image_tag "congratulation.png", class:"quiz-pict" %>
+      </div>
+    </div>
+
+    <div class="quiz-group">
+      <div class='quiz-text-wrap'>
+        <label class="quiz-text">順位は後日発表しますのでお楽しみに！！</label>
+      </div>
+    </div>
+
+    <div class='quiz-btn2'>
+      <%= link_to 'トップページへ戻る', root_path,  class:'quiz-red-btn2' %>
+    </div>
+
+  </div>
+</div>
+
+
+<%= render "shared/second-footer"%>
