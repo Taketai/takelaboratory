@@ -260,8 +260,12 @@ a {
 
 .item-lists>.list {
   width: 37vh;
-  padding: 1vw;
+  padding: 0.5vw;
+  margin: 1vh 2vh;
   background-color: #FFF;
+  border: solid 4px #179D84;
+  border-radius: 10px;
+
 }
 
 
@@ -293,7 +297,8 @@ a {
 .item-info {
   background-color: #FFF;
   color: black;
-  padding: 1vw;
+  padding: 0.5vw;
+  text-align:center
 }
 
 .item-name {
@@ -301,9 +306,9 @@ a {
 }
 
 .item-price {
-  font-size: 1.5vh;
-  display: flex;
-  justify-content: space-between;
+  font-size: 2vh;
+  text-align:center
+  
 }
 
 
