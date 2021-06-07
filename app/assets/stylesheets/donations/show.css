@@ -26,9 +26,9 @@
 }
 
 .item-box-img {
-  height: 50vh;
-  width: 60vw;
-  min-height: 500px;
+  height: 60%;
+  width: 60%;
+  min-height: 200px;
   background-color: rgb(205, 202, 202);
   object-fit: contain;
 }
@@ -50,33 +50,41 @@
 }
 
 
+.item-btn {
+  text-align: center;
+}
+
 .item-red-btn {
   text-align: center;
   background-color: #ea352d;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   color: #FFF;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
+  margin: 5px 0px;
+  padding: 1vh 6vw;
+  border-radius: 10px;
 }
 
 .or-text {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .item-destroy {
   background-color: lightgray;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   color: black;
-  margin: 20px 0px;
-  padding: 2vh 10vw;
+  margin: 5px 0px;
+  padding: 1vh 6vw;
+  border-radius: 10px;
 }
 
 .item-explain-box {
   font-size: 18px;
-  margin: 40px 0px;
+  margin: 40px 0px 20px 0px;
   overflow-wrap: anywhere;
+  text-align : center
+  
 }
 
 .detail-table {

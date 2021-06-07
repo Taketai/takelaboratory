@@ -227,6 +227,9 @@ a {
 
 /* //たけラボの場 */
 
+
+
+
 /* 商品一覧 */
 
 .item-contents {
@@ -255,7 +258,7 @@ a {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .item-lists>.list {
@@ -271,6 +274,7 @@ a {
 
 .item-img-content {
   position: relative;
+  text-align : center
 }
 
 .item-img {
@@ -328,3 +332,10 @@ a {
 }
 
 /* //商品一覧 */
+
+
+/* //↓以下共通事項 */
+.marker{
+  background:linear-gradient(transparent 60%, #ff6 60%);
+  font-weight:bold; 
+  }
