@@ -227,6 +227,9 @@ a {
 
 /* //たけラボの場 */
 
+
+
+
 /* 商品一覧 */
 
 .item-contents {
@@ -255,18 +258,23 @@ a {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .item-lists>.list {
   width: 37vh;
-  padding: 1vw;
+  padding: 0.5vw;
+  margin: 1vh 2vh;
   background-color: #FFF;
+  border: solid 4px #179D84;
+  border-radius: 10px;
+
 }
 
 
 .item-img-content {
   position: relative;
+  text-align : center
 }
 
 .item-img {
@@ -293,7 +301,8 @@ a {
 .item-info {
   background-color: #FFF;
   color: black;
-  padding: 1vw;
+  padding: 0.5vw;
+  text-align:center
 }
 
 .item-name {
@@ -301,9 +310,9 @@ a {
 }
 
 .item-price {
-  font-size: 1.5vh;
-  display: flex;
-  justify-content: space-between;
+  font-size: 2vh;
+  text-align:center
+  
 }
 
 
@@ -323,3 +332,10 @@ a {
 }
 
 /* //商品一覧 */
+
+
+/* //↓以下共通事項 */
+.marker{
+  background:linear-gradient(transparent 60%, #ff6 60%);
+  font-weight:bold; 
+  }
