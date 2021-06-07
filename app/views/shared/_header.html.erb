@@ -13,8 +13,14 @@
     <div class='nav'>
     <ul class='lists-left'>
       <% if user_signed_in? %>
-        <li><%= link_to 'たけラボクイズ大会', quizzes_index_path, class: "quiz-list" %></li>
-        <li><%= link_to 'たけラボクラファ', "#", class: "funding-list" %></li>
+        <li><%= link_to 'たけラボクイズ大会', quizzes_index_path, class: "menu-list" %></li>
+        <li><%= link_to 'たけラボクラファ', "#", class: "menu-list" %></li>
+
+        <% if current_user.id == 1 %>
+          <li><%= link_to 'たけラボクラファ登録', new_donation_path, class: "menu-list" %></li>
+          <% else %>
+        <% end %>
+
       <% else %>
       <% end %>
     </ul>

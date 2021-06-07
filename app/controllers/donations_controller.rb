@@ -5,7 +5,9 @@ class DonationsController < ApplicationController
     @donation = Donation.order("created_at DESC")
   end
 
-
+  def show
+    
+  end
 
   def new
     @donation = Donation
@@ -13,15 +15,20 @@ class DonationsController < ApplicationController
 
   def create
 
-    @donation = Donation.new(Donation_params)
-      if @donation.valid?
-        @donation.save
-        redirect_to root_path
-      else
-        render :new
-      end
+    @donation = Donation.new(donation_params)
+    if @donation.valid?
+      @donation.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
 
+  private
+
+  def donation_params
+    params.require(:donation).permit(:donation_name, :description, :price, :image).merge(user_id: current_user.id)
+  end
 
 end

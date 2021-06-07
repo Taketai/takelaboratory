@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   post 'quizzes', to: 'quizzes#create'
   
   root to: 'donations#index'
-  resources :donations, only: [:index, :new, :create]
+  resources :donations, only: [:index, :new, :create, :show]
   resources :quiz, only: [:index, :new, :create]
 end
