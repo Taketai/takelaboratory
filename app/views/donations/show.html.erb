@@ -12,9 +12,13 @@
     <div class="item-img-content">
       <%= image_tag @donation.image ,class:"item-box-img" %>
 
-      <%# クラファが売れている場合は、sold outを表示しましょう %>
-
-      <%# //クラファが売れている場合は、sold outを表示しましょう %>
+     
+      <% if @donation.order != nil %>
+        <div class='sold-out'>
+          <span>ありがとうございます!!</span>
+        </div> 
+      <% end %>
+     
     </div>
 
     <div class="item-price-box">
@@ -24,16 +28,15 @@
     </div>
   
     <div class="item-price-box">
-    <%# ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+       <% if user_signed_in? &&  @donation.order == nil %>
         <% if current_user.id == @donation.user_id %>
           <%= link_to "クラファの編集", edit_donation_path(@donation.id), method: :get, class: "item-red-btn" %>
           <p class="or-text">or</p>
-          <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
-
+          <%= link_to "削除", donation_path(@donation.id), method: :delete, class:"item-destroy" %>
         <% else %>
-          <%= link_to "購入画面に進む", "#" ,class:"item-red-btn"%>
+          <%= link_to "購入画面に進む", donation_orders_path(@donation.id) ,class:"item-red-btn"%>
         <% end %>
-    <%# //ログインしているユーザーと出品しているユーザーが、同一人物の場合と同一人物ではない場合で、処理を分けましょう %>
+      <% end %>
    </div>
 
 
@@ -43,11 +46,11 @@
     <table class="detail-table">
       <tbody>
         <tr>
-          <th class="detail-item">クラファ件名</th>
+          <th class="detail-item">企画名</th>
           <td class="detail-value"><%= @donation.donation_name %></td>
         </tr>
         <tr>
-          <th class="detail-item">特典</th>
+          <th class="detail-item">概要</th>
           <td class="detail-value"><%= @donation.description %></td>
         </tr>
       </tbody>

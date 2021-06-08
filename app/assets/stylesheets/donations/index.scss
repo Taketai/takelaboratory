@@ -255,14 +255,14 @@ a {
 }
 
 .item-lists {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .item-lists>.list {
-  width: 37vh;
+  width: 30vh;
   padding: 0.5vw;
   margin: 1vh 2vh;
   background-color: #FFF;
@@ -278,8 +278,8 @@ a {
 }
 
 .item-img {
-  width: 33vh;
-  height: 33vh;
+  width: 90%;
+  height: 90%;
 }
 
 .sold-out {
@@ -287,13 +287,13 @@ a {
   top: 40%;
   width: 100%;
   text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
+  background-color: rgb(234, 209, 43);
+  transform: skewY(10deg);
 }
 
 .sold-out>span {
   color: #FFF;
-  font-size: 45px;
+  font-size:  20px;
   font: bold;
 }
 
@@ -306,7 +306,7 @@ a {
 }
 
 .item-name {
-  font-size: 2.5vh;
+  font-size: 2vh;
 }
 
 .item-price {

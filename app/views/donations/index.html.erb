@@ -136,12 +136,12 @@
               <div class='item-img-content'>
                 <%= image_tag donation.image, class: "item-img" %>
 
-                <%# 御礼条件 %>
-
-
-
-                <%# 御礼条件 %>
-  
+                <% if donation.order != nil %>
+                  <div class='sold-out'>
+                    <span>ありがとうございます!!</span>
+                  </div>
+                <% end %>
+         
               </div>
             <div class='item-info'>
               <h3 class='item-name'>
