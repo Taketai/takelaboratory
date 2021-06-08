@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   # patch 'donations', to: 'donations#edit'
   
   root to: 'donations#index'
-  resources :donations
+  resources :donations do
+    resources :orders, only: [:index, :create]
+  end
+
   resources :quiz, only: [:index, :new, :create]
 end
