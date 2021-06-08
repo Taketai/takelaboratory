@@ -57,9 +57,9 @@ class DonationsController < ApplicationController
     if current_user.id != @donation.user_id
       redirect_to root_path
     else
-      # if @donation.order != nil
-      #   redirect_to root_path    
-      # end
+      if @donation.order != nil
+        redirect_to root_path    
+      end
     end
   end
 
