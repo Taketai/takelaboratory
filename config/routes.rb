@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'menus/nakama'
   devise_for :users
 
   get 'quizzes/index'
@@ -12,4 +13,10 @@ Rails.application.routes.draw do
   end
 
   resources :quiz, only: [:index, :new, :create]
+
+
+  get 'menus/nakama'
+
+
+
 end
