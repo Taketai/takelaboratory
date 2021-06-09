@@ -6,11 +6,11 @@
         <li><%= link_to 'たけラボ概要（運営会社)', "#", class: "footer-link" %></li>
         <li><%= link_to 'プライバシーポリシー', "#", class: "footer-link" %></li>
         <li><%= link_to 'たけラボ利用規約', "#", class: "footer-link" %></li>
-        <li><%= link_to 'たけラボのなかまたち', "#", class: "footer-link" %></li>
+        <li><%= link_to 'たけラボのなかまたち', menus_nakama_path, class: "footer-link" %></li>
       </ul>
     </div>
     <div class='furima-details'>
-      <h2 class='footer-content-head'>クラウドファンディング募集（たけラボクラファ）</h2>
+      <h2 class='footer-content-head'>クラウドファンディング募集<br>（たけラボクラファ）</h2>
       <ul>
         <li><%= link_to 'たけラボクラファとは', "#", class: "footer-link" %></li>
         <li><%= link_to 'たけラボクラファ一覧', "#", class: "footer-link" %></li>
@@ -25,6 +25,6 @@
       </ul>
     </div>
   </div>
-  <%= link_to image_tag("takelabo-logo-white.png", class:"logo-white"), "#" %>
+  <%= link_to image_tag("takelabo-logo-white.png", class:"logo-white"), "/" %>
   <p>© たけラボラトリー</p>
 </div>
