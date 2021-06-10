@@ -1,0 +1,45 @@
+<%= render "shared/header"%>
+
+<div class="live-wrapper">
+  <div class="live">
+    <%= render "main_live" %>
+
+            <h3 class='live-main-text'>
+          〜たけラボ講義動画Live〜
+        </h3>
+    <div class="live-video">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/b3HpSV422fA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <div class="live-chat-bar">
+    <%= render "chat_bar" %>
+
+    <h3 class='live-chat-title'>チャットで講義を盛り上げよう</h3>
+    <%= form_with model: @livechat do |f| %>
+      <%= f.text_field :text ,class:"chat-input" %>
+      <%= f.submit '送信' ,class:"chat-btn" %>
+    <% end %>
+    
+    <div id='livechats'>
+      <% @livechats.reverse_each do |livechat| %>
+
+        <% if livechat.id % 2 == 0 %>
+          <div class="chat-userbox">
+            <p><%= livechat.text %></p>
+          </div>
+        <% else %>
+          <div class="chat-box">
+            <p><%= livechat.text %></p>
+          </div>
+        <% end %>
+
+      <% end %>
+    </div>
+
+  </div>
+
+</div>
+
+<%= render "shared/footer"%>
