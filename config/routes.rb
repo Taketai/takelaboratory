@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'livechats/new'
   get 'menus/nakama'
   devise_for :users
 
@@ -14,6 +15,8 @@ Rails.application.routes.draw do
 
   resources :quiz, only: [:index, :new, :create]
 
+  
+  resources :livechats, only: [:new, :create]
 
   get 'menus/nakama'
 
