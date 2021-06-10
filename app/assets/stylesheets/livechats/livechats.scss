@@ -6,9 +6,10 @@
   background-color: #eff0f1e4;
   width: 300px;
   height: 100vh;
+  overflow: scroll;
 }
 
-.live-chat-text {
+.live-chat-title {
   color: #179D84;
   background:linear-gradient(transparent 70%, #ff6 60%);
   font-weight: bold;
@@ -16,6 +17,25 @@
   line-height: 30px;
   margin: 10px;
 }
+
+.chat-box {
+  background-color: #ffffffb4;
+  border: solid 1px #ffffffb4;
+  border-radius: 5px;
+  margin: 10px 30px 10px 10px;
+  padding: 8px;
+}
+
+.chat-userbox {
+  background-color: #c5ee9fb4;
+  border: solid 1px #c5ee9fb4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 30px;
+  padding:10px;
+}
+
+
+
 
 .live {
   background-color: #ffffff;
@@ -44,6 +64,7 @@
   border-radius: 5px;
   margin: 0px 0px 10px 10px;
 }
+
 
 .chat-btn {
   width: 50px;
