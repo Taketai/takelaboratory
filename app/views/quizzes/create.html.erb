@@ -1,9 +1,9 @@
 <%= render "shared/second-header"%>
 
 <div class='quiz-main'>
-  <div class='form-wrap'>
-    <div class='form-header'>
-      <h1 class='form-header-text'>
+  <div class='quiz-wrap'>
+    <div class='quiz-header'>
+      <h1 class='quiz-header-text'>
         正解です！！
       </h1>
     </div>
@@ -15,11 +15,23 @@
       </div>
     </div>
 
-    <div class="quiz-group">
-      <div class='quiz-text-wrap'>
-        <label class="quiz-text">順位は後日発表しますのでお楽しみに！！</label>
-      </div>
-    </div>
+    <h2 class="quiz-ranking-title">ランキング（敬称略）</h2>
+    <table class="quiz-ranking-table">
+      <tbody>
+        <tr>
+          <th class="quiz-ranking-rank">☆１位☆</th>
+          <td class="quiz-ranking-name"> 　ほりえ　つむぎ　</td>
+        </tr>
+        <tr>
+          <th class="quiz-ranking-rank">2位</th>
+          <td class="quiz-ranking-name"> 　ほりえ　つむぎ　</td>
+        </tr>
+        <tr>
+          <th class="quiz-ranking-rank">3位</th>
+          <td class="quiz-ranking-name"> 　ほりえ　つむぎ　</td>
+        </tr>
+      </tbody>
+    </table>
 
     <div class='quiz-btn2'>
       <%= link_to 'トップページへ戻る', root_path,  class:'quiz-red-btn2' %>

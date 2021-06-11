@@ -4,7 +4,7 @@
   <div class="live">
     <%= render "main_live" %>
 
-            <h3 class='live-main-text'>
+            <h3 class='live-main-title'>
           〜たけラボ講義動画Live〜
         </h3>
     <div class="live-video">
@@ -21,7 +21,7 @@
       <%= f.text_field :text ,class:"chat-input" %>
       <%= f.submit '送信' ,class:"chat-btn" %>
     <% end %>
-    
+
     <div id='livechats'>
       <% @livechats.reverse_each do |livechat| %>
 
