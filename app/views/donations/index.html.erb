@@ -175,7 +175,7 @@
 
 <% if user_signed_in? %>
   <%= link_to('#', class: 'asobi-btn') do %>
-    <span class='asobi-btn-text'>まってたよ〜</span>
+    <span class='asobi-btn-text'>まってたよ〜<%= current_user.nickname %>さ〜ん</span> 
     <%# <%= link_to current_user.nickname, "#", class: "asobi-btn-icon" %>
     <%= image_tag 'icon_take.png' , size: '185x50' ,class: "asobi-btn-icon" %>
   <% end %>
