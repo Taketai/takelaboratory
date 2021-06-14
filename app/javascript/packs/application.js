@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("../donation_price")
 require("../card")
+require("../oekaki")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
