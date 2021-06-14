@@ -6,22 +6,40 @@
     <h1 class='form-header-text'>
       たけラボクイズ大会
     </h1>
-
-    <%= @miss %>
+    <% if current_user.id != 1 %>
+      <%= @miss %>
+    <% end %>
 
   </div>
 
+  <%# クイズおえかき形式(どちらかをコメントアウトすること！！！) %>
   <div class="quiz-group">
     <div class="quiz-flame">
-      <%= image_tag "today-quiz.png", class:"quiz-pict" %>
+      <div>
+        <div>
+          <canvas
+            id="draw-area"
+            width="400px"
+            height="400px">
+          </canvas>
+        </div>
+        
+        <% if current_user.id == 1 %>
+          <div class='oekaki-erase'>
+            <button id="clear-button">全消し</button>
+          </div>
+        <% end %>
+        <script src="./js/oekaki.js"></script>
+      </div>
     </div>
   </div>
+  <%# /クイズおえかき形式 %>
 
   <div class="quiz-group">
     <div class='quiz-text-wrap'>
       <label class="quiz-text">『全角ひらがな』で答えを入力してください</label>
     </div>
-    <%= f.text_area :answer, class:"input-default", id:"nickname", placeholder:"全角ひらがなで答えを入力", maxlength:"10" %>
+    <%= f.text_area :answer, class:"input-default", id:"nickname", placeholder:"全角ひらがなで答えを入力", maxlength:"20" %>
   </div>
 
   <div class='quiz-btn'>
