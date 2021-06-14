@@ -25,7 +25,7 @@
     <div id='livechats'>
       <% @livechats.reverse_each do |livechat| %>
 
-        <% if livechat.id % 2 == 0 %>
+        <% if user_signed_in? %>
           <div class="chat-userbox">
             <p><%= livechat.text %></p>
           </div>
