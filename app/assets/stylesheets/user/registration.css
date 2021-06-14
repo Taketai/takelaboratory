@@ -127,6 +127,19 @@
   text-align: center;
 }
 
+
+.form-check-text {
+  font-size: 14px;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.check-flame {
+  border: solid 2px #179D84;
+  border-radius: 10px;
+  margin: 10px;
+}
+
 .form-bottom-text:last-child {
   margin: 0;
   padding-bottom: 50px;
@@ -142,16 +155,7 @@
   margin: 0 auto;
 }
 
-.register-red-btn {
-  width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
-  color: #fff;
-  line-height: 48px;
-  font-size: 14px;
-  cursor: pointer;
-  border-radius: 10px;
-}
+
 
 .register-info {
   margin: 30px 180px 0 0;
@@ -159,4 +163,16 @@
   text-align: center;
   cursor: pointer;
   
+}
+
+
+.register-red-btn[type="submit"] {
+  width: 100%;
+  background-color: #c6c6c6;
+  color: #fff;
+  line-height: 48px;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }
