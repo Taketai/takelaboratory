@@ -1,3 +1,12 @@
+.login-main {
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #179D84;
+  display: flex;
+  justify-content: center;
+}
+
 .login-btn {
   width: 50%;
   margin: 0 auto;
