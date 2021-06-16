@@ -29,7 +29,7 @@
 
 
     <%= form_with model: @donation_order, url: donation_orders_path, id: 'charge-form', class: 'transaction-form-wrap', local: true, method: :post do |f| %>
-    <%= render 'shared/error_messages', model: f.object %>
+    <%= render 'layouts/error_messages', model: f.object %>
 
     <div class='credit-card-form'>
       <h1 class='info-input-haedline'>
