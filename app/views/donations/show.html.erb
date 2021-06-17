@@ -10,15 +10,13 @@
       </h1>
     </div>
     <div class="item-img-content">
-      <%= image_tag @donation.image ,class:"item-box-img" %>
-
-     
-      <% if @donation.order != nil %>
-        <div class='sold-out'>
-          <span>ありがとうございます!!</span>
-        </div> 
-      <% end %>
-     
+      <div class="ribon2">
+        <%= image_tag @donation.image ,class:"item-box-img" %>
+        
+        <% if @donation.order != nil %>
+          <div class="caption"><span>契約御礼</span></div>
+        <% end %>
+     </div>
     </div>
 
     <div class="item-price-box">
