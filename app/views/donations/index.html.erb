@@ -133,27 +133,26 @@
 
           <li class='list'>
             <%= link_to donation_path(donation.id) do %>
-              <div class='item-img-content'>
-                <%= image_tag donation.image, class: "item-img" %>
+              <div class="ribon">
+                <div class='item-img-content'>
+                  <%= image_tag donation.image, class: "item-img" %>
 
-                <% if donation.order != nil %>
-                  <div class='sold-out'>
-                    <span>ありがとうございます!!</span>
+                  <% if donation.order != nil %>
+                    <div class="caption"><span>契約御礼</span></div>
+                  <% end %>         
                   </div>
-                <% end %>
-         
+                </div>
+              <div class='item-info'>
+                <h3 class='item-name'>
+                  <%= donation.donation_name %>
+                </h3>
+                <div class='item-price'>
+                  <span>￥<%= donation.price %>円</span>
+                </div>
               </div>
-            <div class='item-info'>
-              <h3 class='item-name'>
-                <%= donation.donation_name %>
-              </h3>
-              <div class='item-price'>
-                <span>￥<%= donation.price %>円</span>
-              </div>
-            </div>
-          <% end %>
-        </li>      
-      <% end %>
+            <% end %>
+          </li>      
+        <% end %>
 
       <% else %>
         <li class='list'>
