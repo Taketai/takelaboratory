@@ -5,4 +5,11 @@ class Quiz < ApplicationRecord
     validates :answer, format: {with: /\A[ぁ-んァ-ン一-龥]/}
   end
 
+
+  def self.search(search)
+    @quiz = Quiz.where(answer:'ねこ').limit(3)
+    
+    # Quiz.all
+  end
+
 end

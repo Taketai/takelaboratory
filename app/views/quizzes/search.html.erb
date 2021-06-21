@@ -4,7 +4,7 @@
   <div class='quiz-wrap'>
     <div class='quiz-header'>
       <h1 class='quiz-header-text'>
-        正解です！！
+        たけラボクイズランキング
       </h1>
     </div>
 
@@ -17,9 +17,18 @@
 
 
 
-    <div class='quiz-btn2'>
-      <%= link_to 'ランキングを見る', quizzes_search_path,  class:'quiz-red-btn2' %>
-    </div>
+    <h2 class="quiz-ranking-title">素晴らしい３名（敬称略）</h2>
+  
+    <% @quizzes.each_with_index do |quiz, rank| %>
+      <table class="quiz-ranking-table">
+        <tbody>
+          <tr>
+            <th class="quiz-ranking-rank">☆<%= rank +1 %>位☆</th>
+            <td class="quiz-ranking-name"><%= quiz.user.nickname %></td>
+          </tr>
+        </tbody>
+      </table> 
+    <% end %>
 
     <div class='quiz-btn2'>
       <%= link_to 'トップページへ戻る', root_path,  class:'quiz-red-btn2' %>
