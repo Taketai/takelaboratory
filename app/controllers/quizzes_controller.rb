@@ -13,7 +13,7 @@ class QuizzesController < ApplicationController
   def create
     @quiz = Quiz.new(quiz_params)
 
-    if @quiz.valid? && @quiz.answer == "ねこ"
+    if @quiz.valid? && @quiz.answer == "ねこにこばん"
       @quiz.save
       render :create
     else

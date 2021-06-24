@@ -7,7 +7,7 @@ class Quiz < ApplicationRecord
 
 
   def self.search(search)
-    @quiz = Quiz.where(answer:'ねこ').limit(3)
+    @quiz = Quiz.where(answer:'ねこにこばん').limit(3)
     
     # Quiz.all
   end
