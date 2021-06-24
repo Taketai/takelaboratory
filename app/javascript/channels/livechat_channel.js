@@ -10,7 +10,7 @@ consumer.subscriptions.create("LivechatChannel", {
   },
 
   received(data) {
-    const html = `<p>${data.content.text}</p>`;
+    const html = `<div class='chat-userbox'><p>${data.content.text}</p></div>`;
     const livechats = document.getElementById('livechats');
     const newLivechat = document.getElementById('livechat_text');
     livechats.insertAdjacentHTML('afterbegin', html);

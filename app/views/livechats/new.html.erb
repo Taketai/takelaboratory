@@ -23,15 +23,9 @@
     <div id='livechats'>
       <% @livechats.reverse_each do |livechat| %>
 
-        <% if livechat.id % 2 == 0 %>
-          <div class="chat-userbox">
+         <div class="chat-box">
             <p><%= livechat.text %></p>
           </div>
-        <% else %>
-          <div class="chat-box">
-            <p><%= livechat.text %></p>
-          </div>
-        <% end %>
 
       <% end %>
     </div>
